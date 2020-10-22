@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <div class="column">
+      <h2>You are: {{ request.user }}</h2>
+      <p><a class="ui fluid large blue submit button" href="{% url "login" %}">Login</a></p>
+      <p><a class="ui fluid large blue submit button" href="{% url "logout" %}">Logout</a></p>
+  </div>
+{% endblock %}
